@@ -32,7 +32,7 @@ jobs:
         uses: fudan-mse/latex-action@v0.0.1
         with:
           # The root LaTeX file to be compiled
-          root_file: pooja_DS.tex
+          root_file: main.tex
           # The working directory for the LaTeX engine
           #working_directory: # optional
           # The LaTeX engine to be invoked
@@ -46,4 +46,4 @@ jobs:
       - name: Publish PDF
         uses: actions/upload-artifact@v2
         with:
-          path: pooja_DS.pdf
+          path: main.pdf
