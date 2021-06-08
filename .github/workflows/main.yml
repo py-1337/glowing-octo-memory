@@ -38,7 +38,7 @@ jobs:
           # The LaTeX engine to be invoked
           #compiler: # optional, default is latexmk
           # Extra arguments to be passed to the LaTeX engine
-          args: -f # optional, default is -pdf -file-line-error -interaction=nonstopmode
+          # args:  # optional, default is -pdf -file-line-error -interaction=nonstopmode
           # Install extra packages by tlmgr
           #extra_packages: # optional
           # Install extra packages by apk
@@ -46,4 +46,4 @@ jobs:
       - name: Publish PDF
         uses: actions/upload-artifact@v2
         with:
-          path: main.dvi
+          path: main.pdf
