@@ -35,7 +35,7 @@ jobs:
             tlmgr update --self
             tlmgr update --all
             tlmgr install fontspec
-            latex ./main.tex
+            xelatex ./main.tex
       - name: Publish PDF
         uses: actions/upload-artifact@v2
         with:
