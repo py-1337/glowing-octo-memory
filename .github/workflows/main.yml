@@ -35,7 +35,7 @@ jobs:
             tlmgr update --self
             tlmgr update --all
             tlmgr install fontspec
-            xelatex ./pooja_DS.tex
+            xelatex ./pooja_DS.tex -shell-escape
       - name: Publish PDF
         uses: actions/upload-artifact@v2
         with:
