@@ -39,4 +39,4 @@ jobs:
       - name: Publish PDF
         uses: actions/upload-artifact@v2
         with:
-          path: main.pdf
+          path: pooja_DS.pdf
