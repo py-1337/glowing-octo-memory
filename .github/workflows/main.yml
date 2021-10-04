@@ -35,7 +35,7 @@ jobs:
             tlmgr update --self
             tlmgr update --all
             tlmgr install fontspec
-            lualatex .\pooja_DS.tex --interaction=nonstopmode
+            lualatex pooja_DS.tex --interaction=nonstopmode
       - name: Publish PDF
         uses: actions/upload-artifact@v2
         with:
