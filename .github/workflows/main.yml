@@ -35,8 +35,8 @@ jobs:
             tlmgr update --self
             tlmgr update --all
             tlmgr install fontspec
-            lualatex pooja_DS.tex --interaction=nonstopmode
+            lualatex Kanchan_Mahajan.tex --interaction=nonstopmode
       - name: Publish PDF
         uses: actions/upload-artifact@v2
         with:
-          path: pooja_DS.pdf
+          path: Kanchan_Mahajan.pdf
