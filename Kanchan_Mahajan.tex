@@ -47,16 +47,18 @@
 % Change the colours if you want to
 \definecolor{VividPurple}{HTML}{3E0097}
 \definecolor{AppleBlue}{HTML}{0071e3}
+\definecolor{SennderOrange}{HTML}{ff8300}
+
 
 % #0071e3;
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
 % \colorlet{name}{black}
-\colorlet{tagline}{AppleBlue}
-\colorlet{heading}{AppleBlue}
-\colorlet{headingrule}{AppleBlue}
+\colorlet{tagline}{SennderOrange}
+\colorlet{heading}{SennderOrange}
+\colorlet{headingrule}{SennderOrange}
 % \colorlet{subheading}{PastelRed}
-\colorlet{accent}{AppleBlue}
+\colorlet{accent}{SennderOrange}
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
 
@@ -76,7 +78,7 @@
 
 \begin{document}
 \name{Kanchan Mahajan}
-\tagline{Application Developer}
+\tagline{Python Developer}
 % Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
 %% You can add multiple photos on the left or right
 \photoR{2.7cm}{kanchan.jpg}
@@ -118,22 +120,20 @@
 
 \cvsection{Profile}
 \begin{flushleft}
-Enthusiastic Application Developer eager to help simulation experts to process the data in meaningful and efficient way. 
-Experience of Application Development and Simulation Data handling using Python and .NET Framework. 
+Enthusiastic Python Developer who loves new challenges and aims to create a easy to use tools by understanding and automating complexities. 
 Motivated to work, learn, grow and excel professionally.
 \end{flushleft}
 
 \cvsection{Experience}
-\cvevent{Application Developer}{CADFEM GmbH}{Jan 2015 -- Present}{}
+\cvevent{Python Developer}{CADFEM GmbH}{Jan 2015 -- Present}{}
 \begin{itemize}
-\item Drafting and discussing different GUI concepts based on stipulated requirements from simulation experts.
-\item Developing GUI solutions for simulation experts using Python and Winforms.
-\item Interface with simulation software APIs with Python to create custom Post-Processings.
+\item Drafting and discussing different Data Processing concepts based on stipulated requirements from simulation experts.
+\item Developing automated solutions for simulation experts using Python.
+\item Interface with complicated simulation software APIs and create simplified Web APIs using FastAPI.
 \item Implementing complex and parallel automation  workflows for simulation software using Python.
-\item Creation of toolchain for above written applications to  compile application in CI/CD.
 \item Creating and maintaining various test scenarios in CI/CD.
-\item Documentation and project management over period.
-\item Regular usage of methodologies like OOP, MVVM, SOLID, MVC, etc.  
+\item Creation of  CI/CD toolchain.
+\item Documentation and project management over period. 
 \end{itemize}
 \divider
 \cvevent{Application Developer - Intern}{CADFEM GmbH}{Sep 2012--Dec 2014}{}
@@ -147,8 +147,8 @@ Motivated to work, learn, grow and excel professionally.
 \cvevent{Projects at CADFEM}{}{Jan 2015 -- Present}{}
 \begin{itemize}
 
-\item FKM inside Ansys : complex constrained GUI with data persistance for user inputs, and postprocessing results depending on users choice. 
-\item Model Reduction inside Ansys: Thermal reduced order model creation for system simulation based on MOR4Ansys.
+\item FKM inside Ansys : complex constrained Web API with data persistance for user inputs, and postprocessing results depending on users choice. 
+\item Model Reduction inside Ansys: Use simulations as DAGs in parallel and at the end create Reduced order Model for System simulations.
 \item Electric Drive Acoustics inside Ansys: NVH Simulation workflow for Ansys Mechanical software.
 \end{itemize}
 
@@ -163,53 +163,7 @@ Motivated to work, learn, grow and excel professionally.
 
 
 
-% \divider
 
-% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
-
-% \begin{itemize}
-% \item Joined the company as employe \#20 and female employee \#1
-% \item Developed targeted advertisement in order to use user's search queries and show them related ads
-% \end{itemize}
-\begin{comment}
-
-
-\cvsection{A Day of My Life}
-
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{
-% comma-separated list of value/text width/color/detail}
-% Some ad-hoc tweaking to adjust the labels so that they don't overlap
-\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
-\wheelchart{1.5cm}{0.5cm}{%
-  10/13em/accent!30/Sleeping \& dreaming about work,
-  25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
-  5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
-  20/11em/accent!40/Spending time with family,
-  5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
-  30/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
-  5/8em/accent!20/Baking cupcakes
-}
-
-
-% use ONLY \newpage if you want to force a page break for
-% ONLY the currentc column
-\newpage
-
-\cvsection{Publications}
-
-\nocite{*}
-
-\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
-
-\divider
-
-\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
-
-\divider
-
-\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
-\end{comment}
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.
 \switchcolumn
@@ -218,13 +172,14 @@ Motivated to work, learn, grow and excel professionally.
 \cvsection{Skills}
 
 \cvachievement{\faCode}{Programming Languages}{Python, C++, C\verb|#|, Javascript, Typescript, HTML, CSS, YAML}
-\cvachievement{\faUikit}{UI Frameworks}{QT, Winforms/WPF, wxWidgets, React, Vue, Angular}
+\cvachievement{\faUikit}{REST Frameworks}{FastAPI, Flask}
+\cvachievement{\faProjectDiagram}{ETL}{Airflow}
 \cvachievement{\faTerminal}{Scripting}{bash, dos, powershell}
-\cvachievement{\faSimplybuilt}{Simulation}{Ansys}
 \cvachievement{\faDatabase}{Databases}{SQL, MongoDB}
 \cvachievement{\faDocker}{Docker}{docker-compose}
 \cvachievement{\faCodeBranch}{Version Controls}{Git, SVN}
 \cvachievement{\faJira}{Issue Management}{Jira, Gitlab, Azure Devops}
+\cvachievement{\faSimplybuilt}{Simulation}{Ansys}
 \cvachievement{\faCube}{3D Modelling}{Spaceclaim}
 
 \cvsection{Soft Skills}
