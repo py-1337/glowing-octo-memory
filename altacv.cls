@@ -208,8 +208,8 @@
 \newcommand{\name}[1]{\def\@name{#1}}
 \newcommand{\tagline}[1]{\def\@tagline{#1}}
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
-\NewInfoField{email}{\faAt}[mailto:]
-\NewInfoField{mailaddress}{\faEnvelope}
+\NewInfoField{email}{\faEnvelope}[mailto:]
+\NewInfoField{mailaddress}{\faMapMarked}
 \NewInfoField{phone}{\faPhone}
 \NewInfoField{homepage}{\faGlobe}[https://]
 \NewInfoField{twitter}{\faTwitter}[https://twitter.com/]
