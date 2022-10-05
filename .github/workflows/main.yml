@@ -6,7 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main, app_dev_py_qt, sre_py, app_dev_py_net, app_dev_py_net_de]
+    - "*"
   pull_request:
     branches: [ main ]
 
